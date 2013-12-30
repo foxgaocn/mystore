@@ -1,8 +1,57 @@
-nav #main-nav-bar {
-text-transform: uppercase;
-margin-top: 20px;
-padding-bottom: 6px;
-background-color: gray;
-border-bottom: none;
-font-weight: normal;
+
+nav.main_nav {
+    border-radius: 6px;
+    text-transform: uppercase;
+    border-bottom: none;
+    font-weight: normal;
+}
+
+nav.main_nav ul {
+    background: #128F9A;
+    float: left;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #0e7079;
+    width: 100%
+}
+nav.main_nav ul li {
+    float: left;
+    border-left: 1px solid #0e7079;
+}
+
+nav.main_nav ul li#contact {
+      border-right: 1px solid #0e7079;
+}
+
+nav.main_nav ul li#link-to-cart {
+      float: right;
+}
+
+nav.main_nav ul li:first-child {
+    border-left: 0 none;
+}
+nav.main_nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255, 0.25);
+    border-left: 1px solid rgba(255,255,255, 0.25);
+}
+nav.main_nav ul li:first-child a {
+    border-left: 0 none;
+}
+nav.main_nav ul li a:hover {
+    background: #12808a;
+}
+nav.main_nav ul li:first-child a {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+nav.main_nav ul li:last-child a {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+nav.main_nav ul li::nth-last-child(2){
+    border-right: 1px solid #0e7079;
 }

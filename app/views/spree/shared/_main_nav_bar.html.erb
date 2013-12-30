@@ -1,8 +1,9 @@
 <nav class="columns sixteen main_nav">
-  <ul id="main-nav-bar" class="inline" data-hook>
+  <ul id="main-nav-bar" class="inline nav-wrapper" data-hook>
     <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
     <li id="brew tips" data-hook><%= link_to "brew tips", spree.root_path %></li>
-    <li id="about" data-hook><%= link_to "contact", spree.root_path %></li>
+    <li id="about" data-hook><%= link_to "contact us", spree.root_path %></li>
     <li id="contact" data-hook><%= link_to "about", spree.root_path %></li>
+    <li id="link-to-cart" data-hook><%= link_to_cart %></li>
   </ul>
 </nav>
