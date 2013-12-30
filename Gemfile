@@ -33,7 +33,7 @@ group :doc do
 end
 
 gem 'spree', github: 'spree/spree', branch: '2-1-stable'
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-1-stable'
+gem 'spree_auth_devise', path: 'vendor/gems/spree_auth_devise'
 #gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
 
 # Use ActiveModel has_secure_password

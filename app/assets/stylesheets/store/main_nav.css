@@ -1,0 +1,8 @@
+nav #main-nav-bar {
+text-transform: uppercase;
+margin-top: 20px;
+padding-bottom: 6px;
+background-color: gray;
+border-bottom: none;
+font-weight: normal;
+}
