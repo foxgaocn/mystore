@@ -50,8 +50,10 @@ GIT
     spree_sample (2.1.4.beta)
       spree_core (= 2.1.4.beta)
 
-PATH
-  remote: vendor/gems/spree_auth_devise
+GIT
+  remote: git://github.com/spree/spree_auth_devise.git
+  revision: a7b47806f332e196af1b6ae170836e7d5346ff36
+  branch: 2-1-stable
   specs:
     spree_auth_devise (2.1.0)
       cancan (~> 1.6.7)
