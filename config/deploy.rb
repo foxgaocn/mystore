@@ -53,4 +53,11 @@ namespace :deploy do
 
 end
 
-
+namespace :db do
+  desc "creates database & database user"
+  task :create do  
+    on roles(:db), in: :sequence, wait: 5 do
+      execute :rake, 'db:create'
+    end
+  end
+end
