@@ -29,6 +29,6 @@ production:
   encoding: utf8
   database: mystore_product
   pool: 5
-  username: root
+  username: store
   password:
   socket: /tmp/mysql.sock
