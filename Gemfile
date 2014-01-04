@@ -43,7 +43,10 @@ gem 'spree_auth_devise', :github => "spree/spree_auth_devise", :branch => "2-1-s
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'capistrano', '~> 3.0'
+gem 'capistrano-rvm'
+gem 'capistrano-bundler'
+gem 'capistrano-rails', '~> 1.1'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

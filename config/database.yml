@@ -18,7 +18,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: blog_test
+  database: mystore_development
   pool: 5
   username: root
   password:
@@ -27,7 +27,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: blog_production
+  database: mystore_product
   pool: 5
   username: root
   password:
