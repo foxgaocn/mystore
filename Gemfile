@@ -37,6 +37,7 @@ gem 'spree_auth_devise', :github => "spree/spree_auth_devise", :branch => "2-1-s
 gem 'spree_paypal_express', :github => "radar/better_spree_paypal_express", :branch => "2-1-stable"
 
 gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => "2-1-stable"
+gem 'spree_admin_tab', '~>2.1.4'
 #gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
 
 # Use ActiveModel has_secure_password
