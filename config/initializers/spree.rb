@@ -12,6 +12,7 @@ Spree.config do |config|
   config.allow_ssl_in_production = false
 
   config.admin_interface_logo = "store/logo.gif"
+  config.max_level_in_taxons_menu = 2
   config.logo = "store/logo.gif"
 end
 

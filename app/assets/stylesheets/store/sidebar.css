@@ -1,0 +1,173 @@
+nav#taxonomies {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+nav#taxonomies h6{
+  text-transform: uppercase;
+  padding-left: 10px;
+  color: #00adee
+}
+
+nav#taxonomies ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav#taxonomies ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+nav#taxonomies ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+}
+nav#taxonomies ul li.hover,
+nav#taxonomies ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+nav#taxonomies ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 100%;
+}
+nav#taxonomies ul ul li {
+  float: none;
+}
+nav#taxonomies ul li:hover > ul {
+  visibility: visible;
+}
+nav#taxonomies ul ul {
+  top: 0;
+  left: 100%;
+}
+nav#taxonomies ul li {
+  float: none;
+}
+/* Custom Stuff */
+nav#taxonomies span,
+nav#taxonomies a {
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+}
+nav#taxonomies {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-weight: 600;
+  width: 200px;
+}
+nav#taxonomies:after,
+nav#taxonomies ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+nav#taxonomies > ul > li:first-child {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+nav#taxonomies > ul > li:last-child {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+nav#taxonomies > ul > li ul li:first-child {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+nav#taxonomies > ul > li ul li:last-child {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+nav#taxonomies ul,
+nav#taxonomies li {
+  width: 100%;
+}
+nav#taxonomies li {
+  background-color: #128F9A;
+  border-bottom: 1px solid #0e7079;
+  /*background: #c0bebf url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA0CAMAAAB8fKKlAAAAmVBMVEXy7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7erx7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7eoO3g4TAAAAMnRSTlP8+fbz7+vn497Z1M/KxL+5s66oopuVj4mDfHZwamRdV1FMRkA7NTArJiEcGBQQDAkGA02z+X0AAABLSURBVHheDcGDEQMBAACwvFnbtrv/cO3F949AKBJLpDK5QqlSa2hqaevo6ukbGBoZm5iamVtYWlnb2NrZOzg6Obu4url7eHp5+/wAxikFLnlTZcYAAAAASUVORK5CYII=) repeat-x;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #00adee), color-stop(1, #c0bebf));
+  background-image: -webkit-linear-gradient(top, #00adee, #c0bebf);
+  background-image: -moz-linear-gradient(top, #00adee, #c0bebf);
+  background-image: -ms-linear-gradient(top, #00adee, #c0bebf);
+  background-image: -o-linear-gradient(top, #00adee, #c0bebf);
+  background-image: linear-gradient(#00adee, #c0bebf);*/
+}
+nav#taxonomies li:hover,
+nav#taxonomies li.active {
+  background-color: #9A1D12;
+/*  background: #606a76 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA0CAMAAAB8fKKlAAAAmVBMVEVKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmL///9KVmL3Z0MtAAAAMnRSTlP8+fby7+vm4t3Y087Iw723sauln5mTjIaAeXNsZmBaVE5IQjw3MSwnIh0ZFBANCQYDAAm6nKYAAABLSURBVHheDcGDEQMBAACwvFnbtrv/cO3F949AKBJLpDK5QqlSa2hqaevo6ukbGBoZm5iamVtYWlnb2NrZOzg6Obu4url7eHp5+/wAxikFLnlTZcYAAAAASUVORK5CYII=) repeat-x;
+  -moz-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4a5662), color-stop(1, #606a76));
+  background-image: -webkit-linear-gradient(top, #4a5662, #606a76);
+  background-image: -moz-linear-gradient(top, #4a5662, #606a76);
+  background-image: -ms-linear-gradient(top, #4a5662, #606a76);
+  background-image: -o-linear-gradient(top, #4a5662, #606a76);
+  background-image: linear-gradient(#4a5662, #606a76);*/
+}
+nav#taxonomies li:hover > a,
+nav#taxonomies li.active > a {
+  color: #FFF;
+}
+nav#taxonomies a {
+  color: #FFF;
+  line-height: 160%;
+  padding: 16px 8px 16px 28px;
+  width: 164px;
+}
+nav#taxonomies ul ul {
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  width: 200px;
+}
+nav#taxonomies ul ul li {
+  background: #128F9A;
+  border-bottom: 1px solid #0e7079;
+  -moz-box-shadow: inset 0 1px 0 #66707c;
+  -webkit-box-shadow: inset 0 1px 0 #66707c;
+  box-shadow: inset 0 1px 0 #66707c;
+}
+nav#taxonomies ul ul li:hover {
+  background: #9A1D12;
+}
+nav#taxonomies ul ul li a {
+  color: #FFF;
+}
+nav#taxonomies ul ul a,
+nav#taxonomies ul ul a span {
+  font-size: 12px;
+}
