@@ -112,9 +112,11 @@ nav#taxonomies > ul > li ul li:last-child {
 nav#taxonomies ul,
 nav#taxonomies li {
   width: 100%;
+  text-transform: uppercase;
 }
 nav#taxonomies li {
-  background-color: #128F9A;
+  background-color: #ADD8D8;
+  
   border-bottom: 1px solid #0e7079;
   /*background: #c0bebf url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA0CAMAAAB8fKKlAAAAmVBMVEXy7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7erx7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7ery7eoO3g4TAAAAMnRSTlP8+fbz7+vn497Z1M/KxL+5s66oopuVj4mDfHZwamRdV1FMRkA7NTArJiEcGBQQDAkGA02z+X0AAABLSURBVHheDcGDEQMBAACwvFnbtrv/cO3F949AKBJLpDK5QqlSa2hqaevo6ukbGBoZm5iamVtYWlnb2NrZOzg6Obu4url7eHp5+/wAxikFLnlTZcYAAAAASUVORK5CYII=) repeat-x;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #00adee), color-stop(1, #c0bebf));
@@ -126,7 +128,7 @@ nav#taxonomies li {
 }
 nav#taxonomies li:hover,
 nav#taxonomies li.active {
-  background-color: #9A1D12;
+  background-color: #DBB0AD;
 /*  background: #606a76 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA0CAMAAAB8fKKlAAAAmVBMVEVKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmJKVmL///9KVmL3Z0MtAAAAMnRSTlP8+fby7+vm4t3Y087Iw723sauln5mTjIaAeXNsZmBaVE5IQjw3MSwnIh0ZFBANCQYDAAm6nKYAAABLSURBVHheDcGDEQMBAACwvFnbtrv/cO3F949AKBJLpDK5QqlSa2hqaevo6ukbGBoZm5iamVtYWlnb2NrZOzg6Obu4url7eHp5+/wAxikFLnlTZcYAAAAASUVORK5CYII=) repeat-x;
   -moz-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
@@ -143,7 +145,7 @@ nav#taxonomies li.active > a {
   color: #FFF;
 }
 nav#taxonomies a {
-  color: #FFF;
+  color: #333;
   line-height: 160%;
   padding: 16px 8px 16px 28px;
   width: 164px;
@@ -155,17 +157,17 @@ nav#taxonomies ul ul {
   width: 200px;
 }
 nav#taxonomies ul ul li {
-  background: #128F9A;
+  background: #ADD8D8;
   border-bottom: 1px solid #0e7079;
   -moz-box-shadow: inset 0 1px 0 #66707c;
   -webkit-box-shadow: inset 0 1px 0 #66707c;
   box-shadow: inset 0 1px 0 #66707c;
 }
 nav#taxonomies ul ul li:hover {
-  background: #9A1D12;
+  background: #DBB0AD;
 }
 nav#taxonomies ul ul li a {
-  color: #FFF;
+  color: #333;
 }
 nav#taxonomies ul ul a,
 nav#taxonomies ul ul a span {
