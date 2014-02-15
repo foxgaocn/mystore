@@ -14,6 +14,22 @@ Spree.config do |config|
   config.admin_interface_logo = "store/logo.gif"
   config.max_level_in_taxons_menu = 2
   config.logo = "store/logo.gif"
+  
+  # change for other shipping types
 end
 
 Spree.user_class = "Spree::User"
+
+Spree::AusPostShipping::Config = Spree::AusPostShippingConfiguration.new 
+Spree::AusPostShipping::Config[ :origin_postcode ] = '3179' 
+Spree::AusPostShipping::Config[ :default_width ] = 10 
+Spree::AusPostShipping::Config[ :default_height ] = 10
+Spree::AusPostShipping::Config[ :default_length ] = 10
+Spree::AusPostShipping::Config[ :default_weight ] = 0.2
+Spree::AusPostShipping::Config[ :api_key ] = 'c1ded084-da0c-487c-8dec-b4634fe997c2'
+Spree::AusPostShipping::Config[ :service_types ] = ['aus_parcel_regular'] 
+Spree::AusPostShipping::Config[ :get_cheapest ] = true
+
+config = Rails.application.config
+config.spree.calculators.shipping_methods << Spree::Calculator::Shipping::AusPostShipping
+

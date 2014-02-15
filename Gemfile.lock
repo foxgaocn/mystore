@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/foxgaocn/spree_aus_post_shipping.git
+  revision: 4c645bc8b5e0d13d61533330320ce7b7dc66cc63
+  specs:
+    spree_aus_post_shipping (1.0.3)
+      nokogiri
+      rest-client
+      spree_core (>= 1.0.0)
+
+GIT
   remote: git://github.com/radar/better_spree_paypal_express.git
   revision: 7bf25d555d3bd349d35af7cbec248f4f69af47f8
   branch: 2-1-stable
@@ -249,6 +258,8 @@ GEM
       polyamorous (~> 0.6.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     sass (3.2.13)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
@@ -321,6 +332,7 @@ DEPENDENCIES
   sdoc
   spree!
   spree_admin_tab (~> 2.1.4)
+  spree_aus_post_shipping!
   spree_auth_devise!
   spree_paypal_express!
   spree_static_content!
