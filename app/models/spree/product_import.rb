@@ -36,7 +36,7 @@ module Spree
         end
 
 
-        rows = CSV.read(Rails.root.join('..', 'temp', 'list.csv'))
+        rows = CSV.read(Rails.root.join('list.csv'))
 
         if IMPORT_PRODUCT_SETTINGS[:first_row_is_headings]
           col = get_column_mappings(rows[0])
