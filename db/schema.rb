@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140105055913) do
+ActiveRecord::Schema.define(version: 20140216024816) do
 
   create_table "spree_activators", force: true do |t|
     t.string   "description"
@@ -317,6 +317,15 @@ ActiveRecord::Schema.define(version: 20140105055913) do
     t.string  "currency"
   end
 
+  create_table "spree_product_imports", force: true do |t|
+    t.string   "data_file_file_name"
+    t.string   "data_file_content_type"
+    t.integer  "data_file_file_size"
+    t.datetime "data_file_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "spree_product_option_types", force: true do |t|
     t.integer  "position"
     t.integer  "product_id"
@@ -502,6 +511,21 @@ ActiveRecord::Schema.define(version: 20140105055913) do
   end
 
   add_index "spree_shipping_rates", ["shipment_id", "shipping_method_id"], name: "spree_shipping_rates_join_index", unique: true, using: :btree
+
+  create_table "spree_slides", force: true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.string   "link_url"
+    t.boolean  "published"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "position",           default: 0, null: false
+    t.integer  "product_id"
+  end
 
   create_table "spree_state_changes", force: true do |t|
     t.string   "name"
