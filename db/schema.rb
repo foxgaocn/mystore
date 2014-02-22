@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140216024816) do
+ActiveRecord::Schema.define(version: 20140218012651) do
 
   create_table "spree_activators", force: true do |t|
     t.string   "description"
@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 20140216024816) do
 
   add_index "spree_adjustments", ["adjustable_id"], name: "index_adjustments_on_order_id", using: :btree
   add_index "spree_adjustments", ["order_id"], name: "index_spree_adjustments_on_order_id", using: :btree
+  add_index "spree_adjustments", ["source_type", "source_id"], name: "index_spree_adjustments_on_source_type_and_source_id", using: :btree
 
   create_table "spree_assets", force: true do |t|
     t.integer  "viewable_id"
@@ -262,12 +263,13 @@ ActiveRecord::Schema.define(version: 20140216024816) do
     t.string   "type"
     t.string   "name"
     t.text     "description"
-    t.boolean  "active",      default: true
-    t.string   "environment", default: "development"
+    t.boolean  "active",       default: true
+    t.string   "environment",  default: "development"
     t.datetime "deleted_at"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "display_on"
+    t.boolean  "auto_capture"
   end
 
   create_table "spree_payments", force: true do |t|
@@ -312,10 +314,13 @@ ActiveRecord::Schema.define(version: 20140216024816) do
   add_index "spree_preferences", ["key"], name: "index_spree_preferences_on_key", unique: true, using: :btree
 
   create_table "spree_prices", force: true do |t|
-    t.integer "variant_id",                         null: false
-    t.decimal "amount",     precision: 8, scale: 2
-    t.string  "currency"
+    t.integer  "variant_id",                         null: false
+    t.decimal  "amount",     precision: 8, scale: 2
+    t.string   "currency"
+    t.datetime "deleted_at"
   end
+
+  add_index "spree_prices", ["variant_id", "currency"], name: "index_spree_prices_on_variant_id_and_currency", using: :btree
 
   create_table "spree_product_imports", force: true do |t|
     t.string   "data_file_file_name"
@@ -706,7 +711,7 @@ ActiveRecord::Schema.define(version: 20140216024816) do
 
   create_table "spree_variants", force: true do |t|
     t.string   "sku",                                     default: "",    null: false
-    t.decimal  "weight",          precision: 8, scale: 2
+    t.decimal  "weight",          precision: 8, scale: 2, default: 0.0
     t.decimal  "height",          precision: 8, scale: 2
     t.decimal  "width",           precision: 8, scale: 2
     t.decimal  "depth",           precision: 8, scale: 2

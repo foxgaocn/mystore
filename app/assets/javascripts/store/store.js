@@ -1,3 +1,3 @@
-$(document).ready(function() {
-  $('#main-nav-bar').horizontalNav();
-});
+// $(document).ready(function() {
+//   $('#main-nav-bar').horizontalNav();
+// });

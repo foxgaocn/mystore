@@ -6,8 +6,6 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 gem "mysql2"
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -19,7 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.1.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -39,8 +37,14 @@ gem 'spree_paypal_express', :github => "radar/better_spree_paypal_express", :bra
 gem 'spree_static_content', :github => 'spree/spree_static_content', :branch => "2-1-stable"
 gem 'spree_admin_tab', '~>2.1.4'
 gem 'spree_aus_post_shipping', github: 'foxgaocn/spree_aus_post_shipping'
-#gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
+gem 'spree_fancy', :github => 'foxgaocn/spree_fancy', :branch => "2-1-stable"
 
+
+group :assets do
+# Use SCSS for stylesheets
+  gem 'sass-rails', '~> 4.0.0'
+  gem 'compass-rails'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

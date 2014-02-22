@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/foxgaocn/spree_aus_post_shipping.git
-  revision: 4c645bc8b5e0d13d61533330320ce7b7dc66cc63
+  revision: 73d86be7c5d53f4763448bf02e5b26108bd66cf3
   specs:
     spree_aus_post_shipping (1.0.3)
       nokogiri
@@ -8,8 +8,19 @@ GIT
       spree_core (>= 1.0.0)
 
 GIT
+  remote: git://github.com/foxgaocn/spree_fancy.git
+  revision: d6b6cf03b1f6dd3f47dbfd14564ebacd6e324bb2
+  branch: 2-1-stable
+  specs:
+    spree_fancy (2.1.0)
+      compass-rails (~> 1.1.2)
+      deface (~> 1.0.0rc3)
+      jquery-ui-rails
+      spree_core (~> 2.1.0)
+
+GIT
   remote: git://github.com/radar/better_spree_paypal_express.git
-  revision: 7bf25d555d3bd349d35af7cbec248f4f69af47f8
+  revision: d06424352046dcfbeedac26af6b106ffdf41205b
   branch: 2-1-stable
   specs:
     spree_paypal_express (2.0.3)
@@ -18,32 +29,32 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: db3c41bdba85d2b80011c8ba45bffd7f2438be14
+  revision: bf681204028f9c32fa8d6f4d4f9493e95d1081f2
   branch: 2-1-stable
   specs:
-    spree (2.1.4.beta)
-      spree_api (= 2.1.4.beta)
-      spree_backend (= 2.1.4.beta)
-      spree_cmd (= 2.1.4.beta)
-      spree_core (= 2.1.4.beta)
-      spree_frontend (= 2.1.4.beta)
-      spree_sample (= 2.1.4.beta)
-    spree_api (2.1.4.beta)
-      rabl (= 0.8.4)
-      spree_core (= 2.1.4.beta)
+    spree (2.1.4)
+      spree_api (= 2.1.4)
+      spree_backend (= 2.1.4)
+      spree_cmd (= 2.1.4)
+      spree_core (= 2.1.4)
+      spree_frontend (= 2.1.4)
+      spree_sample (= 2.1.4)
+    spree_api (2.1.4)
+      rabl (= 0.9.3)
+      spree_core (= 2.1.4)
       versioncake (~> 1.2.0)
-    spree_backend (2.1.4.beta)
-      jquery-rails (~> 3.0.0)
-      jquery-ui-rails (~> 4.0.0)
+    spree_backend (2.1.4)
+      jquery-rails (~> 3.1.0)
+      jquery-ui-rails (~> 4.1.0)
       select2-rails (~> 3.4.7)
-      spree_api (= 2.1.4.beta)
-      spree_core (= 2.1.4.beta)
-    spree_cmd (2.1.4.beta)
+      spree_api (= 2.1.4)
+      spree_core (= 2.1.4)
+    spree_cmd (2.1.4)
       thor (~> 0.14)
-    spree_core (2.1.4.beta)
-      activemerchant (= 1.42.2)
-      acts_as_list (= 0.2.0)
-      awesome_nested_set (~> 3.0.0.rc.2)
+    spree_core (2.1.4)
+      activemerchant (~> 1.42.3)
+      acts_as_list (= 0.3.0)
+      awesome_nested_set (~> 3.0.0.rc.3)
       aws-sdk (= 1.27.0)
       cancan (~> 1.6.10)
       deface (~> 1.0.0)
@@ -59,18 +70,18 @@ GIT
       state_machine (= 1.2.0)
       stringex (~> 1.5.1)
       truncate_html (= 0.9.2)
-    spree_frontend (2.1.4.beta)
+    spree_frontend (2.1.4)
       canonical-rails
-      jquery-rails (~> 3.0.0)
-      spree_api (= 2.1.4.beta)
-      spree_core (= 2.1.4.beta)
+      jquery-rails (~> 3.1.0)
+      spree_api (= 2.1.4)
+      spree_core (= 2.1.4)
       stringex (~> 1.5.1)
-    spree_sample (2.1.4.beta)
-      spree_core (= 2.1.4.beta)
+    spree_sample (2.1.4)
+      spree_core (= 2.1.4)
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
-  revision: a7b47806f332e196af1b6ae170836e7d5346ff36
+  revision: f6f91480655b8bd0179ba29a7fef917e8d20e101
   branch: 2-1-stable
   specs:
     spree_auth_devise (2.1.0)
@@ -104,7 +115,7 @@ GEM
     active_utils (2.0.1)
       activesupport (>= 2.3.11)
       i18n
-    activemerchant (1.42.2)
+    activemerchant (1.42.5)
       active_utils (~> 2.0, >= 2.0.1)
       activesupport (>= 2.3.14, < 5.0.0)
       builder (>= 2.1.2, < 4.0.0)
@@ -127,9 +138,9 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    acts_as_list (0.2.0)
+    acts_as_list (0.3.0)
       activerecord (>= 3.0)
-    arel (4.0.1)
+    arel (4.0.2)
     atomic (1.1.14)
     awesome_nested_set (3.0.0.rc.3)
       activerecord (>= 4.0.0, < 5)
@@ -142,19 +153,20 @@ GEM
     cancan (1.6.10)
     canonical-rails (0.0.3)
       rails (>= 3.1, < 5.0)
-    capistrano (3.0.1)
+    capistrano (3.1.0)
       i18n
       rake (>= 10.0.0)
-      sshkit (>= 0.0.23)
-    capistrano-bundler (1.1.1)
+      sshkit (~> 1.3)
+    capistrano-bundler (1.1.2)
       capistrano (~> 3.0)
-      sshkit (>= 1.2.0)
-    capistrano-rails (1.1.0)
-      capistrano (>= 3.0.0)
-      capistrano-bundler (>= 1.0.0)
-    capistrano-rvm (0.1.0)
+      sshkit (~> 1.2)
+    capistrano-rails (1.1.1)
+      capistrano (~> 3.1)
+      capistrano-bundler (~> 1.1)
+    capistrano-rvm (0.1.1)
       capistrano (~> 3.0)
-      sshkit (~> 1.2.0)
+      sshkit (~> 1.2)
+    chunky_png (1.3.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.3)
@@ -165,8 +177,14 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.7.0)
     colorize (0.6.0)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.1.4)
+      compass (>= 0.12.2)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -181,23 +199,24 @@ GEM
       devise (>= 2.1.0)
     erubis (2.7.0)
     execjs (2.0.2)
-    ffaker (1.22.1)
+    ffaker (1.23.0)
+    fssm (0.2.10)
     highline (1.6.20)
     hike (1.2.3)
-    httparty (0.12.0)
+    httparty (0.13.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
-    jquery-rails (3.0.4)
+    jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jquery-ui-rails (4.0.5)
+    jquery-ui-rails (4.1.1)
       railties (>= 3.1.0)
     json (1.8.1)
-    kaminari (0.15.0)
+    kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     mail (2.5.4)
@@ -206,14 +225,16 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.2)
     minitest (4.7.5)
-    money (6.0.0)
+    monetize (0.1.4)
+    money (6.0.1)
       i18n (~> 0.6.4)
-    multi_json (1.8.2)
+      monetize (~> 0.1.3)
+    multi_json (1.8.4)
     multi_xml (0.5.5)
-    mysql2 (0.3.14)
+    mysql2 (0.3.15)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (2.7.0)
+    net-ssh (2.8.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
@@ -223,7 +244,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
       mime-types
-    paranoia (2.0.1)
+    paranoia (2.0.2)
       activerecord (~> 4.0)
     paypal-sdk-core (0.2.7)
       multi_json (~> 1.0)
@@ -233,7 +254,7 @@ GEM
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
-    rabl (0.8.4)
+    rabl (0.9.3)
       activesupport (>= 2.3.14)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -256,18 +277,18 @@ GEM
       actionpack (>= 3.0)
       activerecord (>= 3.0)
       polyamorous (~> 0.6.0)
-    rdoc (3.12.2)
+    rdoc (4.1.1)
       json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    sass (3.2.13)
+    sass (3.2.14)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
-    sdoc (0.3.20)
-      json (>= 1.1.3)
-      rdoc (~> 3.10)
+    sdoc (0.4.0)
+      json (~> 1.8)
+      rdoc (~> 4.0, < 5.0)
     select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
@@ -282,24 +303,24 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sshkit (1.2.0)
+    sshkit (1.3.0)
       net-scp (>= 1.1.2)
       net-ssh
       term-ansicolor
     state_machine (1.2.0)
     stringex (1.5.1)
-    term-ansicolor (1.2.2)
-      tins (~> 0.8)
+    term-ansicolor (1.3.0)
+      tins (~> 1.0)
     thor (0.18.1)
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
-    tins (0.13.1)
+    tins (1.0.0)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     truncate_html (0.9.2)
-    turbolinks (2.1.0)
+    turbolinks (2.2.1)
       coffee-rails
     tzinfo (0.3.38)
     uglifier (2.4.0)
@@ -324,8 +345,9 @@ DEPENDENCIES
   capistrano-rails (~> 1.1)
   capistrano-rvm
   coffee-rails (~> 4.0.0)
+  compass-rails
   jbuilder (~> 1.2)
-  jquery-rails
+  jquery-rails (~> 3.1.0)
   mysql2
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
@@ -334,6 +356,7 @@ DEPENDENCIES
   spree_admin_tab (~> 2.1.4)
   spree_aus_post_shipping!
   spree_auth_devise!
+  spree_fancy!
   spree_paypal_express!
   spree_static_content!
   turbolinks
